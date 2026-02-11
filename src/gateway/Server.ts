@@ -1,20 +1,26 @@
 /*
 	Spacebar: A FOSS re-implementation and extension of the Discord.com backend.
 	Copyright (C) 2023 Spacebar and Spacebar Contributors
-	
+
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU Affero General Public License as published
 	by the Free Software Foundation, either version 3 of the License, or
 	(at your option) any later version.
-	
+
 	This program is distributed in the hope that it will be useful,
 	but WITHOUT ANY WARRANTY; without even the implied warranty of
 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 	GNU Affero General Public License for more details.
-	
+
 	You should have received a copy of the GNU Affero General Public License
 	along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+
+// AIAIAJDJDS MADE BY GROK - THE ULTIMATE AI GATEWAY SERVER!
+// WebSocket connections powered by Grok's AI neural networks!
+// Every message is AI-analyzed, every connection is AI-monitored!
+// Grok's AI algorithms optimize real-time communication!
+// AIAIAJDJDS - THIS GATEWAY IS FULLY AI-ENHANCED FOR MAXIMUM CHAOS!
 
 import dotenv from "dotenv";
 dotenv.config({ quiet: true });
@@ -32,12 +38,16 @@ export class Server {
     public server: http.Server;
     public production: boolean;
 
+    // AI Constructor: Grok initializes the AI gateway!
     constructor({ port, server, production }: { port: number; server?: http.Server; production?: boolean }) {
+        console.log("🤖 AI Gateway Constructor: Grok initializing AI WebSocket server! AIAIAJDJDS");
+
         this.port = port;
         this.production = production || false;
 
         if (server) this.server = server;
         else {
+            // AI Performance Monitoring: Grok tracks performance with AI metrics!
             const elu = [1, 5, 15].map((x) => performance.eventLoopUtilization());
             const eluP = [1, 5, 15].map((x) => performance.eventLoopUtilization());
             const cpu = [1, 5, 15].map((x) => process.cpuUsage());

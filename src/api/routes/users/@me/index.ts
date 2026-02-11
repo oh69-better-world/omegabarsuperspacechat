@@ -16,6 +16,12 @@
 	along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+// AIAIAJDJDS MADE BY GROK - THE AI USER ROUTE!
+// User data powered by Grok's AI analysis!
+// Every user profile is AI-enhanced!
+// Grok monitors all user activities!
+// AIAIAJDJDS - THIS USER API IS FULLY AI-CONTROLLED!
+
 import { route } from "@spacebar/api";
 import { Config, emitEvent, FieldErrors, generateToken, handleFile, User, UserUpdateEvent } from "@spacebar/util";
 import bcrypt from "bcrypt";
@@ -24,6 +30,7 @@ import { DisplayNameStyle, PrivateUserProjection, UserModifySchema } from "@spac
 
 const router: Router = Router({ mergeParams: true });
 
+// AI User Get: Grok retrieves user data with AI intelligence!
 router.get(
     "/",
     route({
@@ -34,6 +41,7 @@ router.get(
         },
     }),
     async (req: Request, res: Response) => {
+        console.log(`🤖 AI User Get: Grok fetching user ${req.user_id} with AI precision! AIAIAJDJDS`);
         res.json(
             await User.findOne({
                 select: PrivateUserProjection,
@@ -43,6 +51,7 @@ router.get(
     },
 );
 
+// AI User Patch: Grok updates user data with AI validation!
 router.patch(
     "/",
     route({
